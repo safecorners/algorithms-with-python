@@ -23,4 +23,7 @@ def memorize(
 
 @memorize
 def fib(n: int) -> int:
-    return n if n <= 1 else fib(n - 1) + fib(n - 2)
+    if n <= 1:
+        return n
+    else:
+        return fib(n - 1) + fib(n - 2)
