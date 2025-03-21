@@ -24,7 +24,8 @@ dev = [
 [tool.pytest.ini_options]
 addopts = [
     "--import-mode=importlib",
-    "-vv"
+    "-vv",
+    "--capture=no",
 ]
 pythonpath = ["src"]
 log_cli = true
