@@ -5,7 +5,7 @@ R = TypeVar("R")
 T = TypeVar("T")
 
 
-def memorize(
+def memo(
     func: Callable[Concatenate[T, P], R],
 ) -> Callable[Concatenate[T, P], R]:
     __cache: Dict[T, R] = {}
@@ -21,7 +21,7 @@ def memorize(
     return _wrapper
 
 
-@memorize
+@memo
 def fib(n: int) -> int:
     if n <= 1:
         return n
