@@ -1,6 +1,7 @@
 import pytest
 from typing import List
 from sort.quick_sort import quick_sort
+from sort.quick_sort import partition
 
 
 @pytest.mark.parametrize(
@@ -23,3 +24,16 @@ from sort.quick_sort import quick_sort
 def test_quick_sort(arr: List[int], expected: List[int]) -> None:
     quick_sort(arr)
     assert arr == expected
+
+
+@pytest.mark.parametrize(
+    "arr",
+    [
+        ([2, 2, 2, 2]),
+        ([2, 2, 2, 2, 2]),
+    ],
+)
+def test_partition_multiple_values_equals_pivot(arr: List[int]) -> None:
+    actual = partition(arr, 0, len(arr) - 1)
+    expected = len(arr) // 2 if len(arr) % 2 == 0 else len(arr) // 2 + 1
+    assert actual == expected
