@@ -1,4 +1,4 @@
-from baekjoon.p15650 import combination
+from baekjoon.baekjoon_15650 import combination
 
 
 def test_3C1() -> None:

@@ -1,4 +1,4 @@
-from baekjoon.p2259 import compute
+from baekjoon.baekjoon_2259 import compute
 
 
 def test_compute_k_is_2() -> None:

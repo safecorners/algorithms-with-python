@@ -1,4 +1,4 @@
-from baekjoon.p15652 import non_dec_seq
+from baekjoon.baekjoon_15652 import non_dec_seq
 
 
 def test_example_one() -> None:

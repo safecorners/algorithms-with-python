@@ -1,4 +1,4 @@
-from baekjoon.p15649 import permutation
+from baekjoon.baekjoon_15649 import permutation
 
 
 def test_3P1() -> None:

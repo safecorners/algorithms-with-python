@@ -1,4 +1,4 @@
-from baekjoon.p14453 import maximize_winning
+from baekjoon.baekjoon_14453 import maximize_winning
 
 
 def test_example_1() -> None:

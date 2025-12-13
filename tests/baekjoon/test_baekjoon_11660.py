@@ -1,6 +1,6 @@
 import pytest
 
-from baekjoon.p11660 import compute, Point, Matrix
+from baekjoon.baekjoon_11660 import compute, Point, Matrix
 
 
 @pytest.fixture

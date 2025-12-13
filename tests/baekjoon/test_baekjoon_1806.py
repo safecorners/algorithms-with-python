@@ -1,4 +1,4 @@
-from baekjoon.p1806 import find_shortest_length
+from baekjoon.baekjoon_1806 import find_shortest_length
 
 
 def test_example_1() -> None:

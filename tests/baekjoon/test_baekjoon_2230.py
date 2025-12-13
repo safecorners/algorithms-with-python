@@ -1,4 +1,4 @@
-from baekjoon.p2230 import find
+from baekjoon.baekjoon_2230 import find
 
 
 def test_length() -> None:

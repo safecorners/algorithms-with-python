@@ -1,4 +1,4 @@
-from baekjoon.p2851 import jump
+from baekjoon.baekjoon_2851 import jump
 
 
 def test_jump_case_1() -> None:

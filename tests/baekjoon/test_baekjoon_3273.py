@@ -1,4 +1,4 @@
-from baekjoon.p3273 import find
+from baekjoon.baekjoon_3273 import find
 
 
 def test_example_1() -> None:

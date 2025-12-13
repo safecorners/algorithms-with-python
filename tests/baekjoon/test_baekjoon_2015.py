@@ -1,4 +1,4 @@
-from baekjoon.p2015 import compute
+from baekjoon.baekjoon_2015 import compute
 
 
 def test_example_1() -> None:
