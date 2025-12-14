@@ -1,30 +1,24 @@
-from typing import Generator
+def distribute(candy: int) -> int:
+    outcomes = 0
+    for a in range(0, candy + 1):
+        for b in range(0, candy + 1):
+            for c in range(0, candy + 1):
+                if (
+                    (a + b + c == candy)
+                    and (a >= b + 2)
+                    and (c % 2 == 0)
+                    and a > 0
+                    and b > 0
+                    and c > 0
+                ):
+                    outcomes = outcomes + 1
 
-count = 0
-
-
-def takhee() -> Generator[int, None, None]:
-    num = 0
-    while True:
-        num += 2
-        yield num
-
-
-def distribute(candy: int) -> None:
-    for a in takhee():
-        for b in range(1, candy - a + 1):
-            for c in range(b + 2, candy - b + 2):
-                if a + b + c == candy:
-                    global count
-                    count += 1
-
-        if a > candy:
-            break
+    return outcomes
 
 
 if __name__ == "__main__":
     candy = int(input())
 
-    distribute(candy)
+    outcomes = distribute(candy)
 
-    print(count)
+    print(outcomes)
